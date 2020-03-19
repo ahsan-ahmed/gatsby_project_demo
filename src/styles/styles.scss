@@ -1,0 +1,10 @@
+.ocr-container {
+  display: flex;
+  .ocr-image-root {
+    max-width: 50%;
+    margin-right: 4px;
+    .image-display {
+      max-width: 100%;
+    }
+  }
+}

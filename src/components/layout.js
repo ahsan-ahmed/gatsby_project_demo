@@ -26,7 +26,7 @@ export default ({ children }) => {
       `}
     >
       <Link to={`/`}>
-        <h3
+        <h4
           css={css`
             margin-bottom: ${rhythm(2)};
             display: inline-block;
@@ -34,16 +34,25 @@ export default ({ children }) => {
           `}
         >
           {data.site.siteMetadata.title}
-        </h3>
+        </h4>
+      </Link>
+      <Link
+        to={`/OpticalCharReader/`}
+        css={css`
+          margin: 12px;
+        `}
+      >
+        OpticalCharReader
       </Link>
       <Link
         to={`/about/`}
         css={css`
-          float: right;
+          margin: 12px;
         `}
       >
         About
       </Link>
+
       {children}
     </div>
   )
